@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COD Fanbase Ultimate | Deine Taktik-Zentrale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">COD ELITE | FANBASE</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="spiele.html">CoD Geschichte</a></li>
+                <li><a href="#waffen">Waffen Meta</a></li>
+                <li><a href="#maps">Maps & Strategie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Willkommen, Soldat!</h1>
+            <p>Hier findest du die besten Loadouts und Strategien für den ultimativen Sieg. Bereit für den Einsatz?</p>
+            <button onclick="window.location.href='#waffen';">Zu den Loadouts</button>
+        </section>
+
+        <section id="waffen" class="content">
+            <h2>Detaillierte Waffen Analyse (Meta-Übersicht)</h2>
+            <p>Hier vergleichen wir die aktuellen Top-Waffen mit erweiterten Statistiken für präzisere Loadouts:</p>
+            
+            <table class="waffen-tabelle">
+                <thead>
+                    <tr>
+                        <th>Waffe</th>
+                        <th>Typ</th>
+                        <th>Schaden (pro Schuss)</th>
+                        <th>Feuerrate (Schuss/Min)</th>
+                        <th>Nachladezeit (Sek.)</th>
+                        <th>Mobilität (Bewertung)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="waffe-cell">
+                                <img src="bilder/ak47.jpg" alt="Bild einer AK-47 Waffe" width="80">
+                                <span>AK-47 (Kriegskasse)</span>
+                            </div>
+                        </td>
+                        <td>AR</td>
+                        <td>50</td>
+                        <td>600</td>
+                        <td>3.2</td>
+                        <td>⭐⭐⭐ (Mittel)</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <div class="waffe-cell">
+                                <img src="bilder/m4.jpg" alt="Bild einer M4 Waffe" width="80">
+                                <span>M4 (Sturmgewehr)</span>
+                            </div>
+                        </td>
+                        <td>AR</td>
+                        <td>35</td>
+                        <td>800</td>
+                        <td>2.5</td>
+                        <td>⭐⭐⭐⭐ (Hoch)</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <div class="waffe-cell">
+                                <img src="bilder/mp5.jpg" alt="Bild einer MP5 Maschinenpistole" width="80">
+                                <span>MP5 (SMG)</span>
+                            </div>
+                        </td>
+                        <td>MP</td>
+                        <td>24</td>
+                        <td>950</td>
+                        <td>1.8</td>
+                        <td>⭐⭐⭐⭐⭐ (Sehr Hoch)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="maps" class="content">
+            <h2>Die berühmtesten Maps</h2>
+            <p>Diese Karten sind legendär und bestimmen oft die Strategie des Spiels:</p>
+            
+            <div class="map-container">
+                
+                <div class="map-box">
+                    <img src="bilder/terminal.jpg" alt="Map Terminal" width="100%">
+                    <h3>Terminal</h3>
+                    <p class="spiel">Modern Warfare 2</p>
+                    <p>Berühmte Flughafen-Map, bekannt für die zentrale Halle.</p>
+                </div>
+                
+                <div class="map-box">
+                    <img src="bilder/nuketown.jpg" alt="Map Nuketown" width="100%">
+                    <h3>Nuketown</h3>
+                    <p class="spiel">Black Ops (und viele mehr)</p>
+                    <p>Kleine, chaotische Karte. Perfekt für aggressives Gameplay.</p>
+                </div>
+                
+                <div class="map-box">
+                    <img src="bilder/shipment.jpg" alt="Map Shipment" width="100%">
+                    <h3>Shipment</h3>
+                    <p class="spiel">Verschiedene CoD-Titel</p>
+                    <p>Die kleinste und wohl verrückteste Map der Serie.</p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 COD Fanbase | Erstellt für den Informatikunterricht der 8. Klasse</p>
+    </footer>
+
+</body>
+</html>
