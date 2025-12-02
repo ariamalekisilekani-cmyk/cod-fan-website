@@ -105,11 +105,16 @@ h2 {
     padding-bottom: 10px;
 }
 
-/* Waffentabelle */
+/* Waffentabelle Container (WICHTIG FÜR MOBILE) */
+.tabelle-responsive {
+    overflow-x: auto; /* Erlaubt horizontales Scrollen auf Handys */
+    margin-top: 25px;
+}
+
 .waffen-tabelle {
     width: 100%;
+    min-width: 600px; /* Stellt sicher, dass die Tabelle nicht zu schmal wird */
     border-collapse: collapse; 
-    margin-top: 25px;
     background-color: #1f1f1f;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -189,22 +194,35 @@ article:hover {
 
 /* RESPONSIVES DESIGN (FÜR HANDYS) */
 @media (max-width: 768px) {
-    /* Navigation wird vertikal */
+    /* Navigation wird vertikal und zentriert */
     nav {
         flex-direction: column;
         text-align: center;
+        gap: 10px; /* Abstand zwischen Logo und Links */
+    }
+    nav ul {
+        width: 100%;
+        padding: 0;
     }
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        display: block; /* Links untereinander */
+        margin: 5px 0;
+        width: 100%;
+        box-sizing: border-box;
     }
+    .logo {
+        margin-bottom: 10px;
+    }
+
     /* Maps werden untereinander angezeigt */
     .map-container {
         flex-direction: column;
     }
+
+    /* Tabellen-Schriftgröße verkleinern */
     .waffen-tabelle th, .waffen-tabelle td {
-        padding: 8px; /* Weniger Padding auf kleinen Bildschirmen */
-        font-size: 14px;
+        padding: 8px; 
+        font-size: 12px; 
     }
 }
 
